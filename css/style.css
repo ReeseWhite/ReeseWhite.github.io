@@ -8,7 +8,7 @@
 .hero{
     height: 100vh;
     width: 100%;
-    background-image: url(/img/firewatch.jpg);
+    background-image: url(../img/darksky.jpg);
 }
 nav{
     display: flex;
@@ -17,5 +17,62 @@ nav{
     padding-top: 40px;
     padding-left: 10%;
     padding-right: 10%;
+}
+.logo{
+    color: white;
+    font-size: 29px;
+}
+span{
+    color: #ea1538;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 22px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    transition: .4s;
+    color: #ea1538;
+}
+.quote{
+    position: absolute;
+    top: 30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
 
+.main{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+h1{
+    color: white;
+    font-size: 60px;
+    font-family: 'Montserrat',sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+p {
+    margin-bottom: 25px;
+    color: white;
+    font-size: 20px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+h2 {
+    margin-bottom: 25px;
+    color: white;
+    font-size: 27px;
+    font-weight: 500;
 }
