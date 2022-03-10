@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/darksky.jpg);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.logo{
+    color: white;
+    font-size: 29px;
+}
+span{
+    color: #ea1538;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 22px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    transition: .4s;
+    color: #ea1538;
+}
+.resume{
+    position: absolute;
+    top: 30%;
+    left:42%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+.resume p{
+    margin-bottom: 25px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.main h1{
+    color: white;
+    font-size: 30px;
+    font-family: 'Montserrat',sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.batter img{
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top: 18%;
+    left: 1%;
+}
+.skills-bar{
+    position: relative;
+    top: 40%;
+    left: 35%;
+    width: 550px;
+    background: transparent;
+    border-radius: 10px;
+    padding: 20px 25px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+.skills-bar .bar{
+    margin: 20px 0;
+}
+.skills-bar .bar:first-child{
+    margin-top: 0px;
+}
+.skills-bar .bar .info{
+    margin-bottom: 5px;
+}
+.skills-bar .bar .info span{
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+}
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+.skills-bar .bar .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),
+    0px 1px rgba(225,225,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line span{
+    height: 100%;
+    width: 80%;
+    background: #ea1538;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 0.5s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+.progress-line.html span{
+    width: 80%;
+}
+.progress-line.css span{
+    width: 70%;
+}
+.progress-line.javascript span{
+    width: 60%;
+}
+.progress-line.mysql span{
+    width: 70%;
+}
+.progress-line.python span{
+    width: 55%;
+}
+.bar .progress-line span::before{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+.bar .progress-line span::after{
+    position: absolute;
+    right: 0;
+    top: -28px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background: #000;
+    padding: 1px 8px; 
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+    100%{
+        opacity: 1;
+    }
+}
+.progress-line.html span::after{
+    content: "80%";
+}
+.progress-line.css span::after{
+    content: "70%";
+}
+.progress-line.javascript span::after{
+    content: "60%";
+}
+.progress-line.mysql span::after{
+    content: "70%";
+}
+.progress-line.python span::after{
+    content: "55%";
+}
+h1{
+    color: white;
+    font-size: 30px;
+    font-family: 'Montserrat',sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+p {
+    margin-bottom: 25px;
+    color: white;
+    font-size: 20px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+h2 {
+    margin-bottom: 25px;
+    color: white;
+    font-size: 27px;
+    font-weight: 500;
+}
+.links{
+    position: absolute;
+    top: 90%;
+    left: 8%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.links h6 {
+    color: white;
+    font-size: 30px;
+    margin-right: 50px;
+}
+.contact p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 400;
+}
+.links .social a{
+    display: inline-block;
+    color: white;
+    margin-right: 10px;
+    transition: .3s;
+}
+.links .social a:hover{
+    transform: scale(1.8);
+}
