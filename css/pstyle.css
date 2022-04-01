@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+p{
+    margin-bottom: 25px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/darksky.jpg);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.logo{
+    color: white;
+    font-size: 29px;
+}
+span{
+    color: #ea1538;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 22px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    transition: .4s;
+    color: #ea1538;
+}
+
+.skill1{
+    position: absolute;
+    top: 40%;
+    left:25%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.skill2{
+    position: absolute;
+    top: 40%;
+    left:70%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.skill3{
+    position: absolute;
+    top: 80%;
+    left:25%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.skill4{
+    position: absolute;
+    top: 80%;
+    left:70%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+

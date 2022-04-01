@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/darksky.jpg);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.logo{
+    color: white;
+    font-size: 29px;
+}
+span{
+    color: #ea1538;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 22px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    transition: .4s;
+    color: #ea1538;
+}
+.quote{
+    position: absolute;
+    top: 15%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.main{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+h1{
+    color: white;
+    font-size: 60px;
+    font-family: 'Montserrat',sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+p {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 17px;
+    line-height: 1;
+    font-weight: 500;
+}
+h2 {
+    margin-bottom: 25px;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+.links{
+    position: absolute;
+    top: 90%;
+    left: 8%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.links h6 {
+    color: white;
+    font-size: 30px;
+    margin-right: 50px;
+}
+.contact p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 400;
+}
+.links .social a{
+    display: inline-block;
+    color: white;
+    margin-right: 10px;
+    transition: .3s;
+}
+.links .social a:hover{
+    transform: scale(1.8);
+}
+.center .table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
